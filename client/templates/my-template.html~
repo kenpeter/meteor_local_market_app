@@ -1,0 +1,5 @@
+<template name="myTemplate">
+  <div class="my-template-class js-my-template-log">
+    <h1>Test my template class</h1>
+  </div>
+</template>
