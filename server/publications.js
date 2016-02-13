@@ -7,6 +7,11 @@ Meteor.publish('news', function() {
 });
 
 Meteor.publish('latestActivity', function () {
+
+  debugger;
+
+  var my_latest = Activities.latest();
+
   return Activities.latest();
 });
 

@@ -1,5 +1,6 @@
 <template name="recipeItem">
   <a class="item-recipe {{highlightedClass}}" href="{{path}}">
+    <!-- #with set data context -->
     {{#with recipe}}
       <span class="attribution">
         <span class="title-recipe">{{title}}</span>

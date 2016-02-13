@@ -1,20 +1,23 @@
 <template name="home">
   <div class="page home">
 
-    {{>nav title='Local Market' black=true}}
+    {{>nav title='My Local Market' black=true subtext="what I need subtext?" }}
 
     <div class="content-scrollable">
       <div class="bg-image home">
         <h1 class="title-home">
+          <!-- this is very th funcky logo -->
           <img src="img/app/logo-local.svg" alt="Local Market"/>
         </h1>
-        <span class="hours"><span class="title-callout">Hours</span>
-        Mon–Fri 9-6pm, Sat 10-5pm</span>
+        <span class="hours">
+          <span class="title-callout">Hours</span>
+          I open it up when, I wake up.
+        </span>
         <span class="arrow"></span>
       </div>
 
       <div class="callout-news">
-        <span class="title-callout">News</span>
+        <span class="title-callout">News +++++++</span>
         {{latestNews.text}}
       </div>
 
@@ -35,6 +38,7 @@
       <h2 class="list-title">Our Favorite Recipes</h2>
       <div class="list-subtitle">Hand-picked by neighborhood chefs</div>
       <div class="list-recipes">
+        <!-- this, nice, pass the entire thing into it -->
         {{#each featuredRecipes}}
           {{> recipeItem recipe=this size='small'}}
         {{/each}}

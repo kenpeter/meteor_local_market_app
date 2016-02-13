@@ -1,3 +1,4 @@
+/* Does it mean it is the controller? */
 Template.recipeItem.helpers({
   path: function () {
     return Router.path('recipe', this.recipe);
@@ -9,6 +10,7 @@ Template.recipeItem.helpers({
   },
   
   bookmarkCount: function () {
+    // this is the actual data
     var count = BookmarkCounts.findOne({recipeName: this.name});
     return count && count.count;
   }
